@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1B4965;
+  --primary-light: #2D6A8F;
+  --primary-dark: #133A52;
+
+  --sand-light: #FAF8F5;
+  --sand-medium: #E8D5B7;
+  --sand-dark: #D4B896;
+
+  --azure-light: #7EC8E3;
+  --azure-medium: #3A8FB7;
+  --azure-dark: #2D7A9C;
+
+  --accent: #E07A5F;
+  --accent-light: #E8947D;
+  --accent-dark: #C96A50;
+
+  --sky-light: #7DD3FC;
+  --sky-medium: #38BDF8;
+  --sky-dark: #0EA5E9;
+
+  --deep-light: #1E3A8A;
+  --deep-medium: #1E40AF;
+  --deep-dark: #1E3A8A;
+
+  --background: #FAF8F5;
+  --foreground: #1C1C1C;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-dm-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(27, 73, 101, 0.2);
+    color: #1B4965;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md rounded-3xl shadow-md border transition-all duration-300;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Hide scrollbars globally */
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Currency popup centering */
+.currency-popup-center {
+  position: fixed !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 101 !important;
+  padding: 1rem !important;
+  pointer-events: none !important;
+}
+
+.currency-popup-center > * {
+  pointer-events: auto !important;
+  width: 100%;
+  max-width: 28rem;
+}
+
+/* Phone input (react-phone-number-input + custom CountrySelect) */
+.lina-phone-input {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}
+.lina-phone-input .PhoneInputInput {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Gallery Swiper (mobile) */
+.gallery-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+.gallery-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #c4b5a4;
+  opacity: 1;
+}
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: var(--accent);
+  width: 24px;
+  border-radius: 4px;
+}

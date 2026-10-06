@@ -1,0 +1,967 @@
+/* Custom Payload Admin Styles */
+/* Brand Colors: Orange #FF5A00, Blue #86ceeb */
+
+:root {
+  /* Override Payload theme colors with brand colors */
+  --theme-elevation-0: #ffffff;
+  --theme-elevation-50: #fafafa;
+  --theme-elevation-100: #f5f5f5;
+  --theme-elevation-150: #f0f0f0;
+  --theme-elevation-200: #e8e8e8;
+  --theme-elevation-250: #e0e0e0;
+  --theme-elevation-300: #d0d0d0;
+  --theme-elevation-350: #c0c0c0;
+  --theme-elevation-400: #a0a0a0;
+  --theme-elevation-450: #808080;
+  --theme-elevation-500: #666666;
+  --theme-elevation-550: #4a4a4a;
+  --theme-elevation-600: #333333;
+  --theme-elevation-650: #2a2a2a;
+  --theme-elevation-700: #222222;
+  --theme-elevation-750: #1a1a1a;
+  --theme-elevation-800: #141414;
+  --theme-elevation-850: #0f0f0f;
+  --theme-elevation-900: #0a0a0a;
+  --theme-elevation-950: #050505;
+  --theme-elevation-1000: #000000;
+
+  /* Primary brand color - Orange */
+  --theme-success-50: #fff9f5;
+  --theme-success-100: #fff4e8;
+  --theme-success-200: #ffe8d1;
+  --theme-success-300: #ffd5ad;
+  --theme-success-400: #FF5A00;
+  --theme-success-500: #FF5A00;
+  --theme-success-600: #E65000;
+  --theme-success-700: #d67532;
+  --theme-success-800: #b86428;
+  --theme-success-900: #8a4a1e;
+
+  /* Secondary brand color - Blue */
+  --theme-text: #1a1a1a;
+  --theme-bg: #ffffff;
+}
+
+/* Nav/Sidebar Styling */
+.nav {
+  background: #ffffff !important;
+  border-right: 1px solid #e8e8e8 !important;
+}
+
+.nav__wrap {
+  background: #ffffff !important;
+}
+
+/* Nav Header/Logo area */
+.nav-header {
+  border-bottom: 1px solid #f0f0f0 !important;
+  padding: 16px !important;
+}
+
+/* Nav Groups */
+.nav-group {
+  border-bottom: 1px solid #f5f5f5 !important;
+}
+
+.nav-group__toggle {
+  color: #666 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 12px 16px 8px !important;
+
+  &:hover {
+    color: #FF5A00 !important;
+  }
+}
+
+/* Nav Items */
+.nav__link {
+  color: #4a4a4a !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 10px 16px !important;
+  margin: 2px 8px !important;
+  border-radius: 8px !important;
+  transition: all 0.15s ease !important;
+
+  &:hover {
+    background: #fff4e8 !important;
+    color: #FF5A00 !important;
+  }
+
+  &.active,
+  &--active {
+    background: #FF5A00 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+
+    &:hover {
+      background: #E65000 !important;
+      color: #ffffff !important;
+    }
+
+    svg {
+      color: #ffffff !important;
+    }
+  }
+
+  svg {
+    color: #86ceeb !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 10px !important;
+  }
+}
+
+/* Account/User section at bottom */
+.nav__account {
+  border-top: 1px solid #f0f0f0 !important;
+  padding: 12px 16px !important;
+  background: #fafafa !important;
+}
+
+/* Dashboard link */
+.nav__link--dashboard {
+  svg {
+    color: #FF5A00 !important;
+  }
+}
+
+/* Step Nav (breadcrumbs) */
+.step-nav {
+  background: #fafafa !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  padding: 12px 20px !important;
+
+  a {
+    color: #86ceeb !important;
+    font-size: 13px !important;
+
+    &:hover {
+      color: #FF5A00 !important;
+    }
+  }
+
+  .step-nav__last {
+    color: #1a1a1a !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  transition: all 0.15s ease !important;
+}
+
+.btn--style-primary {
+  background: #FF5A00 !important;
+  border-color: #FF5A00 !important;
+
+  &:hover {
+    background: #E65000 !important;
+    border-color: #E65000 !important;
+  }
+}
+
+.btn--style-secondary {
+  background: #ffffff !important;
+  border-color: #86ceeb !important;
+  color: #86ceeb !important;
+
+  &:hover {
+    background: #e8f6fc !important;
+    border-color: #5ba3c0 !important;
+    color: #5ba3c0 !important;
+  }
+}
+
+/* Pills/Tabs */
+.pills {
+  background: #f5f5f5 !important;
+  border-radius: 8px !important;
+  padding: 4px !important;
+}
+
+.pill {
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+
+  &--active {
+    background: #FF5A00 !important;
+    color: #ffffff !important;
+  }
+}
+
+/* Cards/Panels */
+.card {
+  border-radius: 10px !important;
+  border: 1px solid #e8e8e8 !important;
+  box-shadow: none !important;
+
+  &:hover {
+    border-color: #FF5A00 !important;
+    box-shadow: 0 4px 12px rgba(243, 152, 77, 0.15) !important;
+  }
+}
+
+/* Form Fields */
+.field-type {
+  input,
+  textarea,
+  select {
+    border-radius: 8px !important;
+    border-color: #e0e0e0 !important;
+    font-size: 13px !important;
+
+    &:focus {
+      border-color: #86ceeb !important;
+      box-shadow: 0 0 0 3px rgba(134, 206, 235, 0.2) !important;
+    }
+  }
+}
+
+/* Labels */
+.field-label {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #4a4a4a !important;
+  text-transform: none !important;
+}
+
+/* Table Styling */
+.table {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 1px solid #e8e8e8 !important;
+}
+
+.table .row {
+  border-bottom: 1px solid #f0f0f0 !important;
+
+  &:hover {
+    background: #fff9f5 !important;
+  }
+}
+
+.table .row--header {
+  background: #fafafa !important;
+
+  .sort-column__label {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #666 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
+}
+
+/* Status Pills */
+.pill--has-action,
+.status-pill {
+  border-radius: 12px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  padding: 4px 10px !important;
+}
+
+/* Pagination */
+.paginator {
+  .paginator__page {
+    border-radius: 6px !important;
+    font-size: 12px !important;
+
+    &--is-current {
+      background: #FF5A00 !important;
+      color: #ffffff !important;
+    }
+
+    &:hover:not(.paginator__page--is-current) {
+      background: #e8f6fc !important;
+      color: #5ba3c0 !important;
+    }
+  }
+}
+
+/* Search */
+.search-filter {
+  input {
+    border-radius: 8px !important;
+    background: #f5f5f5 !important;
+    border: 1px solid transparent !important;
+
+    &:focus {
+      background: #ffffff !important;
+      border-color: #86ceeb !important;
+    }
+  }
+}
+
+/* Modal */
+.modal__content {
+  border-radius: 12px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.modal__header {
+  border-bottom: 1px solid #f0f0f0 !important;
+  padding: 20px !important;
+}
+
+/* Drawer */
+.drawer__content {
+  border-radius: 12px 0 0 12px !important;
+}
+
+.drawer__header {
+  border-bottom: 1px solid #f0f0f0 !important;
+  background: #fafafa !important;
+}
+
+/* Upload/Media */
+.upload__image {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+.file-card {
+  border-radius: 10px !important;
+  border: 1px solid #e8e8e8 !important;
+
+  &:hover {
+    border-color: #FF5A00 !important;
+  }
+}
+
+/* Tooltip */
+.tooltip {
+  background: #1a1a1a !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+}
+
+/* Loading Spinner */
+.loading-overlay__spinner {
+  &::after {
+    border-color: #86ceeb transparent transparent transparent !important;
+  }
+}
+
+/* Checkbox */
+.checkbox-input {
+  &:checked {
+    background: #FF5A00 !important;
+    border-color: #FF5A00 !important;
+  }
+}
+
+/* Radio */
+.radio-input {
+  &:checked {
+    border-color: #FF5A00 !important;
+
+    &::after {
+      background: #FF5A00 !important;
+    }
+  }
+}
+
+/* Select/Dropdown */
+.rs__control {
+  border-radius: 8px !important;
+  border-color: #e0e0e0 !important;
+
+  &--is-focused {
+    border-color: #86ceeb !important;
+    box-shadow: 0 0 0 3px rgba(134, 206, 235, 0.2) !important;
+  }
+}
+
+.rs__option {
+  &--is-selected {
+    background: #FF5A00 !important;
+  }
+
+  &--is-focused {
+    background: #fff4e8 !important;
+  }
+}
+
+/* Rich Text Editor */
+.rich-text {
+  border-radius: 10px !important;
+  border: 1px solid #e0e0e0 !important;
+
+  &:focus-within {
+    border-color: #86ceeb !important;
+  }
+}
+
+/* Array/Block Fields */
+.array-field__row {
+  border-radius: 10px !important;
+  border: 1px solid #e8e8e8 !important;
+  margin-bottom: 8px !important;
+
+  &:hover {
+    border-color: #86ceeb !important;
+  }
+}
+
+.array-field__add-button {
+  border-radius: 8px !important;
+  border: 2px dashed #e0e0e0 !important;
+  color: #86ceeb !important;
+
+  &:hover {
+    border-color: #FF5A00 !important;
+    color: #FF5A00 !important;
+    background: #fff9f5 !important;
+  }
+}
+
+/* Collapsible */
+.collapsible {
+  border-radius: 10px !important;
+  border: 1px solid #e8e8e8 !important;
+}
+
+.collapsible__toggle {
+  background: #fafafa !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* Date Picker */
+.react-datepicker {
+  border-radius: 10px !important;
+  border: 1px solid #e8e8e8 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.react-datepicker__day {
+  border-radius: 6px !important;
+
+  &--selected {
+    background: #FF5A00 !important;
+  }
+
+  &:hover {
+    background: #fff4e8 !important;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 4px;
+
+  &:hover {
+    background: #86ceeb;
+  }
+}
+
+/* Header */
+.app-header {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+
+/* Global Link Color */
+a {
+  color: #86ceeb;
+
+  &:hover {
+    color: #FF5A00;
+  }
+}
+
+/* Focus States */
+*:focus-visible {
+  outline: 2px solid #86ceeb !important;
+  outline-offset: 2px !important;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Prevent horizontal page overflow on all viewports */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+@media (max-width: 1024px) {
+  /* Long filenames in upload relationships must break to fit */
+  .upload-relationship-details,
+  .upload-relationship-details__details,
+  .upload-relationship-details__filename,
+  .upload-relationship-details__filename a,
+  .file-meta__filename,
+  .file-meta a {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    word-break: break-all !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+  }
+
+  /* Ensure flex children of upload row can shrink */
+  .upload-relationship,
+  .upload-relationship-details {
+    min-width: 0 !important;
+    flex-wrap: wrap !important;
+  }
+
+  .upload-relationship-details__details {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+  }
+
+  /* ============================================
+     Mobile sidebar — fixed overlay drawer
+     Main content always spans full viewport width.
+     Payload toggles `.nav--nav-open` on the aside when the menu button is tapped.
+     ============================================ */
+
+  /* Collapse the grid to a single track so the main wrap fills the viewport.
+     The aside is position:fixed (out of flow) — it doesn't need a track. */
+  .template-default,
+  .template-default--nav-animate,
+  .template-default--nav-hydrated {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  /* Nav becomes a fixed-position overlay drawer */
+  aside.nav {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    width: min(80vw, 320px) !important;
+    max-width: 320px !important;
+    z-index: 100 !important;
+    background: #ffffff !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.18) !important;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    will-change: transform;
+  }
+
+  aside.nav.nav--nav-open {
+    transform: translateX(0) !important;
+  }
+
+  /* Backdrop — covers viewport while drawer is open; sits BELOW the drawer */
+  aside.nav.nav--nav-open::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* Nav internals fit within drawer width */
+  .nav__scroll {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .nav__header,
+  .nav__header-content,
+  .nav__wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .nav__link,
+  .nav-group__toggle {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  /* Main content always full width on mobile */
+  .template-default__wrap {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    grid-column: 1 / -1 !important;
+  }
+
+  main.collection-edit,
+  main.collection-list,
+  main.dashboard {
+    width: 100% !important;
+    max-width: 100vw !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Custom admin pages: tighter padding */
+  .lina-admin-page {
+    padding: 12px !important;
+  }
+
+  /* Smaller headings on mobile */
+  .lina-admin-page h1 {
+    font-size: 20px !important;
+  }
+
+  /* Collapse any inline multi-column grid to a single column on mobile.
+     Payload strips our custom className from view roots, so we target the
+     inline style pattern directly. Internal fixed grids "1fr 1fr" (button
+     rows) don't match these selectors and are left alone. */
+  div[style*="repeat(auto-fit"],
+  div[style*="repeat(auto-fill"],
+  div[style*="repeat(2,"],
+  div[style*="repeat(3,"],
+  div[style*="repeat(4,"],
+  /* Dashboard's outer 2-col layout uses literal "1fr 1fr" with gap: 12px.
+     The inner button grid also uses "1fr 1fr" but with gap: 8px — left alone. */
+  div[style*="grid-template-columns: 1fr 1fr"][style*="gap: 12px"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Step Nav (breadcrumbs) - tighter spacing */
+  .step-nav {
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+
+    a {
+      font-size: 12px !important;
+    }
+  }
+
+  /* Tables: horizontal scroll on mobile (wrapped) */
+  .collection-list__wrap,
+  .table-wrap {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  /* Document header / page gutters: tighter padding */
+  .gutter--left {
+    padding-left: 12px !important;
+  }
+  .gutter--right {
+    padding-right: 12px !important;
+  }
+
+  .doc-header {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .doc-header__title,
+  .render-title {
+    font-size: 22px !important;
+    word-break: break-word !important;
+  }
+
+  /* Document controls: stack actions, wrap nicely */
+  .doc-controls,
+  .doc-controls__content,
+  .doc-controls__controls {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .doc-controls .btn,
+  .doc-controls__controls .btn {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+
+  /* Document fields: tighter inset */
+  .render-fields,
+  .document-fields,
+  .document-fields__fields {
+    padding: 8px !important;
+  }
+
+  /* Group / collapsible / array field: less internal padding */
+  .group-field,
+  .group-field--top-level,
+  .collapsible__content,
+  .array-field__draggable-rows .array-field__row {
+    padding: 12px !important;
+  }
+
+  .collapsible-field__row-label-wrap,
+  .collapsible__header {
+    padding: 10px 12px !important;
+  }
+
+  /* Field rows: full width, stop horizontal flex squeeze */
+  .field-type {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Multi-column layouts collapse to single column */
+  .render-fields--columns-half > .field-type,
+  .render-fields--columns-2 > *,
+  .render-fields--columns-3 > *,
+  .render-fields--columns-4 > * {
+    width: 100% !important;
+  }
+
+  /* Inputs: never exceed parent */
+  .field-type input,
+  .field-type textarea,
+  .field-type select,
+  .field-type .rs__control {
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Long words and code blocks should break */
+  .field-type code,
+  .field-type pre,
+  .render-fields a {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* Modal: full width on mobile */
+  .modal__content {
+    width: 95% !important;
+    max-width: 95% !important;
+    margin: 10px !important;
+  }
+
+  .modal__header {
+    padding: 14px !important;
+  }
+
+  /* Drawer: full width */
+  .drawer__content {
+    width: 100% !important;
+    max-width: 100vw !important;
+    border-radius: 0 !important;
+  }
+
+  /* Dashboard cards/groups */
+  .dashboard__group {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dashboard__card,
+  .dashboard__label {
+    width: 100% !important;
+  }
+
+  /* Filter / list controls */
+  .list-controls,
+  .list-controls__wrap,
+  .where-builder,
+  .list-controls__sub-header,
+  .collection-list__sub-header {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .list-controls__buttons {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  /* Search input: full width */
+  .search-filter,
+  .search-filter input {
+    width: 100% !important;
+  }
+
+  /* Pills/tabs: allow scroll */
+  .pills {
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pill {
+    flex-shrink: 0;
+    padding: 6px 12px !important;
+    font-size: 11px !important;
+  }
+
+  /* Tabs - horizontal scroll */
+  .tabs-field__tabs-wrap,
+  .tabs-field__tabs,
+  .tabs__tabs {
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabs-field__tab-button,
+  .tabs__tab {
+    flex-shrink: 0;
+  }
+
+  /* List Bulk-actions */
+  .list-selection {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  /* Login page */
+  .template-default--login .login__wrap,
+  .login {
+    padding: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Paginator: wrap */
+  .paginator {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 4px !important;
+  }
+
+  /* Per-page selector */
+  .per-page {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  /* Step nav: smaller crumbs */
+  .step-nav__last {
+    font-size: 12px !important;
+  }
+
+  /* Reduce spacing in nav account */
+  .nav__account {
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+  }
+
+  /* Ensure aside nav doesn't blow out the page when closed */
+  .template-default {
+    overflow-x: hidden !important;
+  }
+
+  aside.nav {
+    max-width: 100vw !important;
+  }
+
+  /* Upload preview / picker: stack */
+  .upload__dropzoneAndUpload,
+  .upload__dropzone {
+    flex-wrap: wrap !important;
+  }
+
+  /* Rich text editor toolbar: scroll if too wide */
+  .toolbar-popup,
+  .lexical-editor-theme__toolbar,
+  .rich-text__toolbar {
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Code editor */
+  .code-editor {
+    font-size: 12px !important;
+  }
+
+  /* Date picker: contain overflow */
+  .react-datepicker-popper {
+    max-width: 100vw !important;
+  }
+
+  /* Relationship picker */
+  .relationship__wrap,
+  .relationship__menu {
+    max-width: 100% !important;
+  }
+
+  /* SEO plugin fields */
+  .field-type.seoMeta {
+    padding: 0 !important;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .lina-admin-page {
+    padding: 10px !important;
+  }
+
+  .lina-admin-page h1 {
+    font-size: 18px !important;
+  }
+
+  /* Modal padding */
+  .modal__content {
+    padding: 16px !important;
+  }
+
+  /* Even tighter gutters */
+  .gutter--left {
+    padding-left: 8px !important;
+  }
+  .gutter--right {
+    padding-right: 8px !important;
+  }
+
+  .doc-header {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .doc-header__title,
+  .render-title {
+    font-size: 20px !important;
+  }
+
+  /* Even less internal padding for nested fields */
+  .group-field,
+  .group-field--top-level,
+  .collapsible__content,
+  .array-field__draggable-rows .array-field__row {
+    padding: 10px !important;
+  }
+
+  .render-fields,
+  .document-fields,
+  .document-fields__fields {
+    padding: 6px !important;
+  }
+}
